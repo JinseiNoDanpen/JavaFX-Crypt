@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="600.0" style="-fx-background-color: #3c3e42;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.shinodanpen.main.UIController">
+   <children>
+      <Button fx:id="inputBrowseButton" layoutX="446.0" layoutY="50.0" mnemonicParsing="false" onAction="#onInputBrowseButtonClick" text="Browse" />
+      <TextField fx:id="inputDirectory" layoutX="100.0" layoutY="78.0" prefHeight="25.0" prefWidth="420.0" promptText="Select a file from the system" />
+      <Label layoutX="100.0" layoutY="50.0" text="Input File Path:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="outputDirectory" editable="false" layoutX="100.0" layoutY="171.0" prefHeight="25.0" prefWidth="420.0" promptText="Please insert an input file path above," />
+      <Label layoutX="100.0" layoutY="154.0" text="Output File Path:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="encryptButton" disable="true" layoutX="103.0" layoutY="332.0" mnemonicParsing="false" onAction="#onEncryptButtonClick" style="-fx-background-color: lime;" text="ENCRYPT">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="decryptButton" disable="true" layoutX="361.0" layoutY="332.0" mnemonicParsing="false" onAction="#onDecryptButtonClick" style="-fx-background-color: yellow;" text="DECRYPT">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
