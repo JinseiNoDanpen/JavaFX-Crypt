@@ -17,12 +17,12 @@
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-controls</artifactId>
-      <version>17.0.1</version>
+      <version>17.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-fxml</artifactId>
-      <version>17.0.1</version>
+      <version>17.0.2</version>
     </dependency>
                             
     <dependency>
@@ -58,7 +58,8 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>org.shinodanpen.main/org.shinodanpen.main.HelloApplication</mainClass>
+              <mainClass>org.shinodanpen.algorithm.Main</mainClass>
+              <commandLineArgs>-Dfile.encoding=UTF-8</commandLineArgs>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>

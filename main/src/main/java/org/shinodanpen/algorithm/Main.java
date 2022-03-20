@@ -1,10 +1,13 @@
-package org.shinodanpen.main;
+package org.shinodanpen.algorithm;
 
 import javafx.application.Application;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
 
-    public static char[] Alphabet = new char[]{
+    private static Character[] AlphabetArray = new Character[]{
             '\\', '|', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '\'', 'ì',
             '!', '\"', '£', '$', '%', '&', '/', '(', ')', '=', '?', '^',
             'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'è', '+',
@@ -14,6 +17,8 @@ public class Main {
             '<', 'z', 'x', 'c', 'v', 'b', 'n', 'm', ',', '.', '-',
             '>', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', ';', ':', '_', ' '   };
 
+    public static List<Character> Alphabet = Arrays.asList(AlphabetArray);
+
 
     public static void main(String[] args) {
 
@@ -22,8 +27,7 @@ public class Main {
 
         //In ogni caso, in questa classe è presente la chiave hard-codata dell'algoritmo.
         //Si tratta di un array di char che contiene tutti i caratteri che è possibile scrivere senza effettuare
-        // combinazioni di tasti eccessivamente complicate.
-
+        //combinazioni di tasti eccessivamente complicate.
         Application.launch(MainApplication.class, args);
 
 

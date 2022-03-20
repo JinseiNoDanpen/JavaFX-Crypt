@@ -3,6 +3,6 @@ module org.shinodanpen.main {
     requires javafx.fxml;
             
                         
-    opens org.shinodanpen.main to javafx.fxml;
-    exports org.shinodanpen.main;
+    opens org.shinodanpen.algorithm to javafx.fxml;
+    exports org.shinodanpen.algorithm;
 }

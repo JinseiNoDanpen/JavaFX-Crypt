@@ -1,4 +1,4 @@
-package org.shinodanpen.main;
+package org.shinodanpen.algorithm;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

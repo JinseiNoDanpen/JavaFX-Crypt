@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="successLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="600.0" style="-fx-background-color: #3c3e42;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.shinodanpen.algorithm.UIController">
+   <children>
+      <Button fx:id="inputBrowseButton" layoutX="446.0" layoutY="50.0" mnemonicParsing="false" onAction="#onInputBrowseButtonClick" text="Sfoglia" />
+      <TextField fx:id="inputDirectory" layoutX="100.0" layoutY="78.0" prefHeight="25.0" prefWidth="420.0" promptText="Seleziona un file dal filesystem" />
+      <Label layoutX="100.0" layoutY="50.0" text="Percorso file da crittare:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="outputDirectory" editable="false" layoutX="100.0" layoutY="171.0" prefHeight="25.0" prefWidth="420.0" promptText="Seleziona un file dallo spazio sopra" />
+      <Label layoutX="100.0" layoutY="154.0" text="Percorso del file crittato:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="encryptButton" disable="true" layoutX="103.0" layoutY="332.0" mnemonicParsing="false" onAction="#onEncryptButtonClick" prefWidth="150.0" style="-fx-background-color: lime;" text="CRITTA">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="decryptButton" disable="true" layoutX="361.0" layoutY="332.0" mnemonicParsing="false" onAction="#onDecryptButtonClick" prefWidth="150.0" style="-fx-background-color: yellow;" text="DECRITTA">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="keyField" layoutX="103.0" layoutY="266.0" promptText="Inserisci la chiave" />
+      <Label layoutX="103.0" layoutY="247.0" text="Chiave:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="clearKeyButton" layoutX="263.0" layoutY="266.0" mnemonicParsing="false" onAction="#onClearKeyButtonClick" style="-fx-background-color: red;" text="PULISCI CHIAVE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
